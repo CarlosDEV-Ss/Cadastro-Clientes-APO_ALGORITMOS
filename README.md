@@ -32,4 +32,10 @@ Cada cliente possui:
 
 ## 👨‍💻 Autor
 
-Carlo - Trabalho APO - UNIPAR EAD
+[Carlos Henrique Dos Santos]
+
+RA: [09057828]
+Curso: [Segurança CIbernética]
+Polo: [Umuarama - PR]
+Instituição: [Unipar - EAD]
+📧 Email: [Carlos.santos9067@gmail.com] 💻 GitHub: [https://github.com/CarlosDEV-Ss]
