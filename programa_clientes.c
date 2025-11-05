@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Estrutura para armazenar dados dos clientes
+// Estrutura que armazena dados dos clientes
 struct dados {
     int codigo;
     char nome[50];
@@ -10,10 +10,10 @@ struct dados {
     float salario;
 };
 
-// Declaração global do array de clientes
+// Array global
 struct dados cliente[5];
 
-// Função para imprimir os dados de todos os clientes
+// Função que imprimi os dados dos clientes
 void imprimirDados(struct dados cli[]) {
     int i;
     printf("\n--- Dados dos Clientes ---\n");
@@ -60,7 +60,7 @@ int main() {
         printf("\n");
     }
     
-    // Chama função para imprimir dados
+    // Chama a função para imprimir dados
     imprimirDados(cliente);
     
     // Calcula soma e média das idades
