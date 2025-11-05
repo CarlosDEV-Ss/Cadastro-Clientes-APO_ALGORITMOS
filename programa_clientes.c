@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Estrutura para armazenar dados dos clientes
 struct dados {
     int codigo;
     char nome[50];
@@ -9,8 +10,10 @@ struct dados {
     float salario;
 };
 
+// Declaração global do array de clientes
 struct dados cliente[5];
 
+// Função para imprimir os dados de todos os clientes
 void imprimirDados(struct dados cli[]) {
     int i;
     printf("\n--- Dados dos Clientes ---\n");
@@ -24,6 +27,7 @@ void imprimirDados(struct dados cli[]) {
     }
 }
 
+// Função que calcula e retorna a soma das idades
 int somaIdades(struct dados cli[]) {
     int i, soma = 0;
     for (i = 0; i < 5; i++) {
@@ -32,6 +36,7 @@ int somaIdades(struct dados cli[]) {
     return soma;
 }
 
+// Função principal
 int main() {
     int i;
     int somaTotal;
@@ -39,6 +44,7 @@ int main() {
     
     printf("Cadastro de Clientes\n\n");
     
+    // Entrada de dados dos 5 clientes
     for (i = 0; i < 5; i++) {
         printf("Cliente %d:\n", i + 1);
         printf("Codigo: ");
@@ -54,8 +60,10 @@ int main() {
         printf("\n");
     }
     
+    // Chama função para imprimir dados
     imprimirDados(cliente);
     
+    // Calcula soma e média das idades
     somaTotal = somaIdades(cliente);
     mediaIdade = somaTotal / 5;
     
